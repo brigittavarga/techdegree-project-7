@@ -1,0 +1,136 @@
+$light-purple: #7477bf;
+$dark-purple: #4d4c72;
+$green: #81c98f;
+$blue: #74b1bf;
+$light-grey: #b2b2b2;
+$white: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+}
+
+header {
+  background-color: $light-purple;
+  color: $white;
+
+  h1 {
+    font-size: 1.2rem;
+  }
+  span {
+    font-weight: 100;
+  }
+  sup {
+    font-weight: 100;
+    font-size: 0.6rem;
+  }
+
+  .header-right .profile-image {
+    width: 45px;
+    border-radius: 50%;
+  }
+}
+
+.line {
+  display: none;
+}
+
+nav {
+  background-color: $dark-purple;
+}
+
+main {
+  background-color: tomato;
+}
+
+#dashboard {
+  background-color: yellow;
+}
+
+#traffic {
+  background-color: red;
+}
+
+#daily-traffic {
+  background-color: $blue;
+}
+
+#mobile-users {
+  background-color: tomato;
+}
+
+#social-stats {
+  background-color: black;
+  color: $white;
+}
+
+#new-members {
+  background-color: blue;
+}
+
+#recent-activity {
+  background-color: $green;
+}
+
+#message-user {
+  background-color: orange;
+}
+
+#settings {
+  background-color: purple;
+}
+
+/* ----------
+MEDIA QUERIES 
+----------- */
+
+@media screen and (min-width: 768px) {
+  header,
+  nav {
+    display: flex;
+  }
+
+  header {
+    padding: 15px;
+    padding-left: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    img {
+      margin-left: 25px;
+      margin-right: 10px;
+    }
+  }
+
+  .line {
+    display: block;
+    border-left: 2px solid #333;
+    height: 45px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    height: 100vh;
+    a {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}

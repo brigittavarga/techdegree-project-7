@@ -1,0 +1,24 @@
+{
+  "name": "techdegree-project-7",
+  "version": "1.0.0",
+  "description": "WebApp Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brigittavarga/techdegree-project-7.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brigittavarga/techdegree-project-7/issues"
+  },
+  "homepage": "https://github.com/brigittavarga/techdegree-project-7#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {}
+}
