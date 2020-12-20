@@ -20,7 +20,7 @@ nav {
 input[type="checkbox"] {
   position: relative;
   width: 80px;
-  height: 25px;
+  height: 30px;
   background: #bdc3c7;
   -webkit-appearance: none;
   border-radius: 20px;
@@ -37,7 +37,7 @@ input[type="checkbox"]::before {
   content: "";
   position: absolute;
   left: 8px;
-  top: 4px;
+  top: 6px;
   width: 18px;
   height: 18px;
   background: #fff;
@@ -47,7 +47,7 @@ input[type="checkbox"]::before {
   transition: 0.4s; }
 
 input:checked[type="checkbox"]::before {
-  left: 53px; }
+  left: 55px; }
 
 .toggle {
   position: relative;
@@ -57,13 +57,13 @@ label {
   position: absolute;
   color: #fff;
   font-weight: 700;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   pointer-events: none; }
 
 .on,
 .off {
   font-family: Nunito, sans-serif;
-  bottom: 9px; }
+  bottom: 10px; }
 
 .on {
   left: 8px; }
