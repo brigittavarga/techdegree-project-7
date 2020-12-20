@@ -38,19 +38,19 @@
     <nav>
 
         <a href="#">
-            <img src="icons/icon-dashboard.svg" alt="Dashboard icon" width="30px">
+            <img src="icons/icon-dashboard.svg" alt="Dashboard icon" width="30">
         </a>
 
         <a href="#">
-            <img src="icons/icon-members.svg" alt="Members icon" width="30px">
+            <img src="icons/icon-members.svg" alt="Members icon" width="30">
         </a>
 
         <a href="#">
-            <img src="icons/icon-visits.svg" alt="Visits icon" width="30px">
+            <img src="icons/icon-visits.svg" alt="Visits icon" width="30">
         </a>
 
         <a href="#">
-            <img src="icons/icon-settings.svg" alt="Settings icon" width="30px">
+            <img src="icons/icon-settings.svg" alt="Settings icon" width="30">
         </a>
 
     </nav>
@@ -297,7 +297,6 @@
             <h3>Settings</h3>
 
             <p>Send email notifications</p>
-            <!-- custom CSS toggle code -->
             <div class="toggle">
                 <input type="checkbox">
                 <label for="" class="on">ON</label>
@@ -305,7 +304,11 @@
             </div>
 
             <p>Set profile to public</p>
-            <!-- custom CSS toggle code -->
+            <div class="toggle">
+                <input type="checkbox">
+                <label for="" class="on">ON</label>
+                <label for="" class="off">OFF</label>
+            </div>
 
             <select class="form-field" id="timezone">
                 <option disabled selected>Select a timezone</option>
@@ -325,6 +328,7 @@
         </section> <!-- .settings -->
 
     </main>
-    
+
+    <script src="js/app.js"></script>
 </body>
 </html>
