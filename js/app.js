@@ -71,7 +71,7 @@ let trafficData = {
     let trafficChart = new Chart(trafficCanvas, {
       type: "line",
       data: trafficData,
-      option: trafficOptions
+      options: trafficOptions
     });
     
     const mobileData = {

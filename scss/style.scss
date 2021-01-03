@@ -14,6 +14,11 @@ $white: #fff;
 
 body {
   font-family: "Nunito", sans-serif;
+  color: $light-gray;
+}
+
+hr {
+  margin: 50px 0 50px 0;
 }
 
 header {
@@ -63,6 +68,21 @@ nav {
       margin-bottom: 20px;
     }
   }
+}
+
+main {
+  margin: 0 20px 0 20px;
+}
+
+h3 {
+  color: grey;
+}
+
+.section-heading {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .arrow {
@@ -143,9 +163,109 @@ label {
   width: 95vh;
 }
 
-/* -------------
-LAYOUT
-------------- */
+.widget-container input,
+.widget-container textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: "Nunito", sans-serif;
+  outline: none;
+  border: 1px solid $light-gray;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 15px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $light-purple;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  margin-top: 10px;
+}
+
+::placeholder {
+  color: $light-gray;
+}
+
+.widget-container input {
+  margin-bottom: 10px;
+}
+
+.traffic-content {
+  position: relative;
+  width: 120vh;
+  margin: 0 auto;
+}
+
+.traffic-header,
+.daily,
+.mobile-users,
+.social-stats,
+.new-members,
+.recent-activity,
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    font-weight: 400;
+  }
+  .traffic-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 10px 0 20px 0;
+    li {
+      padding-right: 12px;
+    }
+  }
+}
+
+.members,
+.member-activity-container {
+  text-align: center;
+  margin-bottom: 20px;
+  p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: $dark-purple;
+  }
+  img {
+    width: 50px;
+    border-radius: 50%;
+  }
+}
+
+.member-activity img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.social-container {
+  border: 1px solid $light-gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .social-image {
+    width: 50px;
+    height: 50px;
+    background-color: $light-purple;
+    border-radius: 50%;
+    padding: 20px;
+    display: relative;
+  }
+  .svg-icon {
+    fill: $white;
+    display: absolute;
+    left: 5px;
+  }
+}
 
 .grid-container {
   display: grid;
@@ -164,6 +284,27 @@ nav {
 main {
   grid-area: main;
   display: grid;
+
+  .dashboard-header {
+    margin: 20px 0 30px 0;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      color: grey;
+      font-weight: 300;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .dashboard-search input {
+      padding: 10px;
+      width: 80vh;
+      border: 1px solid $light-gray;
+      border-radius: 5px;
+    }
+  }
 }
 
 header {
@@ -175,6 +316,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    h3 {
+      color: $white;
+      font-weight: 400;
+    }
   }
 }
 
