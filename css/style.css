@@ -151,11 +151,12 @@ label {
   color: #333;
 }
 
+/*
 .widget-container,
 .widget-container-half {
   width: 95vh;
 }
-
+*/
 .widget-container input,
 .widget-container textarea {
   width: 100%;
@@ -189,7 +190,7 @@ label {
 
 .traffic-content {
   position: relative;
-  width: 120vh;
+  width: 100vh;
   margin: 0 auto;
 }
 
@@ -298,11 +299,10 @@ main {
 }
 main .dashboard-header {
   margin: 20px 0 30px 0;
-  width: 450px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  grid-column: 1/span 2;
 }
 main .dashboard-header h2 {
   color: grey;
