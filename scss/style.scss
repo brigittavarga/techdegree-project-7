@@ -63,6 +63,7 @@ nav {
   text-align: center;
   a {
     margin-left: 40px;
+    text-decoration: none;
     img {
       margin-top: 20px;
       margin-bottom: 20px;
@@ -158,12 +159,10 @@ label {
   color: #333;
 }
 
-/*
 .widget-container,
 .widget-container-half {
-  width: 95vh;
+  width: 95%;
 }
-*/
 
 .widget-container input,
 .widget-container textarea {
@@ -225,10 +224,17 @@ label {
   margin: 0;
 }
 
+.social-stats {
+  flex-direction: row;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
 .traffic-header,
 .daily,
 .mobile-users,
-.social-stats,
 .new-members,
 .recent-activity,
 .message {
@@ -236,6 +242,7 @@ label {
   flex-direction: column;
   align-items: center;
   grid-column: 1 / span 2;
+
   h3 {
     font-weight: 400;
   }
@@ -393,6 +400,25 @@ MEDIA QUERIES
   }
 }
 
+// Large tablet / small desktop
+@media screen and (min-width: 768px) and (max-width: 930px) {
+  .dashboard-header,
+  .alert,
+  .traffic,
+  .social {
+    max-width: calc(100vw - 95px);
+  }
+
+  .daily,
+  .mobile-users,
+  .new-members,
+  .recent-activity,
+  .message,
+  .settings {
+    max-width: calc(50vw - 47.5px);
+  }
+}
+
 // Desktop
 @media screen and (min-width: 1024px) {
   main .dashboard-header {
@@ -401,5 +427,9 @@ MEDIA QUERIES
     .dashboard-search input {
       width: 60vh;
     }
+  }
+  .traffic-header {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

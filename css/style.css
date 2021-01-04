@@ -57,6 +57,7 @@ nav {
 }
 nav a {
   margin-left: 40px;
+  text-decoration: none;
 }
 nav a img {
   margin-top: 20px;
@@ -151,12 +152,11 @@ label {
   color: #333;
 }
 
-/*
 .widget-container,
 .widget-container-half {
-  width: 95vh;
+  width: 95%;
 }
-*/
+
 .widget-container input,
 .widget-container textarea {
   width: 100%;
@@ -217,10 +217,17 @@ label {
   margin: 0;
 }
 
+.social-stats {
+  flex-direction: row;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
 .traffic-header,
 .daily,
 .mobile-users,
-.social-stats,
 .new-members,
 .recent-activity,
 .message {
@@ -232,7 +239,6 @@ label {
 .traffic-header h3,
 .daily h3,
 .mobile-users h3,
-.social-stats h3,
 .new-members h3,
 .recent-activity h3,
 .message h3 {
@@ -241,7 +247,6 @@ label {
 .traffic-header .traffic-nav,
 .daily .traffic-nav,
 .mobile-users .traffic-nav,
-.social-stats .traffic-nav,
 .new-members .traffic-nav,
 .recent-activity .traffic-nav,
 .message .traffic-nav {
@@ -253,7 +258,6 @@ label {
 .traffic-header .traffic-nav li,
 .daily .traffic-nav li,
 .mobile-users .traffic-nav li,
-.social-stats .traffic-nav li,
 .new-members .traffic-nav li,
 .recent-activity .traffic-nav li,
 .message .traffic-nav li {
@@ -401,6 +405,23 @@ main .settings {
     width: 45vh;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 930px) {
+  .dashboard-header,
+.alert,
+.traffic,
+.social {
+    max-width: calc(100vw - 95px);
+  }
+
+  .daily,
+.mobile-users,
+.new-members,
+.recent-activity,
+.message,
+.settings {
+    max-width: calc(50vw - 47.5px);
+  }
+}
 @media screen and (min-width: 1024px) {
   main .dashboard-header {
     flex-direction: row;
@@ -408,6 +429,11 @@ main .settings {
   }
   main .dashboard-header .dashboard-search input {
     width: 60vh;
+  }
+
+  .traffic-header {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
