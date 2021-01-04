@@ -298,6 +298,7 @@ canvas {
 
 .social-flex-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -305,7 +306,16 @@ canvas {
   border: 1px solid #b2b2b2;
   display: flex;
   justify-content: space-between;
-  width: 450px;
+  padding: 15px 70px 15px 10px;
+  margin: 0 0 30px 0;
+}
+.social-container .social-text {
+  margin-left: 15px;
+}
+.social-container .social-nr {
+  font-size: 2.3rem;
+  font-weight: 100;
+  color: #333;
 }
 .social-container .social-image {
   width: 50px;
@@ -443,6 +453,11 @@ main .settings {
   }
 
   .traffic-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-flex-container {
     flex-direction: row;
     justify-content: space-between;
   }
