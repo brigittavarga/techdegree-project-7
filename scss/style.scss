@@ -188,6 +188,25 @@ label {
   margin-top: 10px;
 }
 
+.btn-primary:hover {
+  background-color: $dark-purple;
+}
+
+.btn-disabled {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  background-color: $light-gray;
+  color: $white;
+}
+
+.btn-disabled:hover {
+  background-color: grey;
+}
+
 ::placeholder {
   color: $light-gray;
 }
@@ -196,10 +215,14 @@ label {
   margin-bottom: 10px;
 }
 
+.traffic {
+  grid-column: 1 / span 2;
+}
+
 .traffic-content {
   position: relative;
-  width: 100vh;
-  margin: 0 auto;
+  max-width: 100vw;
+  margin: 0;
 }
 
 .traffic-header,
@@ -212,6 +235,7 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
+  grid-column: 1 / span 2;
   h3 {
     font-weight: 400;
   }
@@ -288,6 +312,7 @@ main {
   display: grid;
 
   .dashboard-header {
+    max-width: 100vw;
     margin: 20px 0 30px 0;
     display: flex;
     flex-direction: column;
@@ -302,10 +327,13 @@ main {
     }
     .dashboard-search input {
       padding: 10px;
-      width: 80vh;
+      width: 80vw;
       border: 1px solid $light-gray;
       border-radius: 5px;
     }
+  }
+  #alert {
+    grid-column: 1 / span 2;
   }
 }
 
