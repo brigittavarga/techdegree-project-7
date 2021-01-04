@@ -367,7 +367,11 @@ MEDIA QUERIES
 
 // Desktop
 @media screen and (min-width: 1024px) {
-  .dashboard-header {
+  main .dashboard-header {
     flex-direction: row;
+    justify-content: space-between;
+    .dashboard-search input {
+      width: 60vh;
+    }
   }
 }

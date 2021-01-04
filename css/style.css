@@ -374,8 +374,12 @@ main .settings {
   }
 }
 @media screen and (min-width: 1024px) {
-  .dashboard-header {
+  main .dashboard-header {
     flex-direction: row;
+    justify-content: space-between;
+  }
+  main .dashboard-header .dashboard-search input {
+    width: 60vh;
   }
 }
 
