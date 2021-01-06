@@ -214,7 +214,8 @@ label {
   margin-bottom: 10px;
 }
 
-.traffic {
+.traffic,
+.social-stats {
   grid-column: 1 / span 2;
 }
 
@@ -230,7 +231,7 @@ label {
 }
 
 section {
-  margin-bottom: 50px;
+  padding-top: 50px;
   border-bottom: 1px solid $light-gray;
 }
 
@@ -295,9 +296,10 @@ canvas {
 .social-container {
   border: 1px solid $light-gray;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 15px 70px 15px 10px;
   margin: 0 0 30px 0;
+  min-width: 31%;
   .social-text {
     margin-left: 15px;
   }
@@ -307,17 +309,23 @@ canvas {
     color: #333;
   }
   .social-image {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-color: $light-purple;
     border-radius: 50%;
     padding: 20px;
-    display: relative;
+    position: relative;
   }
   .svg-icon {
     fill: $white;
-    display: absolute;
-    left: 5px;
+    position: absolute;
+    top: 23px;
+    left: 21px;
+  }
+  .facebook-icon-svg {
+    position: absolute;
+    top: 16px;
+    left: 7px;
   }
 }
 
@@ -417,7 +425,7 @@ MEDIA QUERIES
     width: 90vh;
   }
   .widget-container-half {
-    width: 45vh;
+    width: 80%;
   }
 }
 
@@ -442,6 +450,15 @@ MEDIA QUERIES
 
 // Desktop
 @media screen and (min-width: 1024px) {
+  header {
+    z-index: 20;
+  }
+  nav {
+    position: fixed;
+    padding-top: 80px;
+    height: 100vh;
+    width: 55px;
+  }
   main .dashboard-header {
     flex-direction: row;
     justify-content: space-between;
@@ -456,5 +473,9 @@ MEDIA QUERIES
   .social-flex-container {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .daily {
+    border-right: 1px solid $light-gray;
   }
 }

@@ -207,7 +207,8 @@ label {
   margin-bottom: 10px;
 }
 
-.traffic {
+.traffic,
+.social-stats {
   grid-column: 1/span 2;
 }
 
@@ -223,7 +224,7 @@ label {
 }
 
 section {
-  margin-bottom: 50px;
+  padding-top: 50px;
   border-bottom: 1px solid #b2b2b2;
 }
 
@@ -305,9 +306,10 @@ canvas {
 .social-container {
   border: 1px solid #b2b2b2;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 15px 70px 15px 10px;
   margin: 0 0 30px 0;
+  min-width: 31%;
 }
 .social-container .social-text {
   margin-left: 15px;
@@ -318,17 +320,23 @@ canvas {
   color: #333;
 }
 .social-container .social-image {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   background-color: #7377bf;
   border-radius: 50%;
   padding: 20px;
-  display: relative;
+  position: relative;
 }
 .social-container .svg-icon {
   fill: #fff;
-  display: absolute;
-  left: 5px;
+  position: absolute;
+  top: 23px;
+  left: 21px;
+}
+.social-container .facebook-icon-svg {
+  position: absolute;
+  top: 16px;
+  left: 7px;
 }
 
 .grid-container {
@@ -423,7 +431,7 @@ main .settings {
   }
 
   .widget-container-half {
-    width: 45vh;
+    width: 80%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 930px) {
@@ -444,6 +452,17 @@ main .settings {
   }
 }
 @media screen and (min-width: 1024px) {
+  header {
+    z-index: 20;
+  }
+
+  nav {
+    position: fixed;
+    padding-top: 80px;
+    height: 100vh;
+    width: 55px;
+  }
+
   main .dashboard-header {
     flex-direction: row;
     justify-content: space-between;
@@ -460,6 +479,10 @@ main .settings {
   .social-flex-container {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .daily {
+    border-right: 1px solid #b2b2b2;
   }
 }
 
