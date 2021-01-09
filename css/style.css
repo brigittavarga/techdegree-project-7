@@ -74,7 +74,7 @@ h3 {
 
 .section-heading {
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1rem;
   margin-bottom: 20px;
 }
@@ -129,12 +129,24 @@ input:checked[type=checkbox]::before {
   display: inline;
 }
 
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
 label {
   position: absolute;
   color: #fff;
   font-weight: 700;
   font-size: 0.8rem;
   pointer-events: none;
+}
+
+#timezone {
+  width: 80%;
+  padding: 12px;
+  border-radius: 5px;
 }
 
 .on,
@@ -185,7 +197,7 @@ label {
 }
 
 .btn-disabled {
-  width: 100%;
+  width: 80%;
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -232,6 +244,12 @@ canvas {
   margin-bottom: 50px;
 }
 
+.mobile-users h3,
+.daily h3,
+.social-stats h3 {
+  margin: 0 auto 50px auto;
+}
+
 .traffic-header,
 .daily,
 .mobile-users,
@@ -240,7 +258,6 @@ canvas {
 .message {
   display: flex;
   flex-direction: column;
-  align-items: center;
   grid-column: 1/span 2;
 }
 .traffic-header h3,
@@ -273,8 +290,9 @@ canvas {
 
 .members,
 .member-activity-container {
-  text-align: center;
   margin-bottom: 20px;
+  display: flex;
+  align-items: space-between;
 }
 .members p,
 .member-activity-container p {
@@ -290,6 +308,7 @@ canvas {
 .member-activity-container img {
   width: 50px;
   border-radius: 50%;
+  margin-right: 30px;
 }
 
 .member-activity img {
@@ -481,8 +500,32 @@ main .settings {
     justify-content: space-between;
   }
 
-  .daily {
+  .message,
+.daily {
     border-right: 1px solid #b2b2b2;
+  }
+
+  .message,
+.settings {
+    border-bottom: none;
+    margin-bottom: 20px;
+  }
+
+  .settings {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .settings .settings-button {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile-users h3,
+.daily h3,
+.social-stats h3 {
+    margin-left: 50px;
   }
 }
 

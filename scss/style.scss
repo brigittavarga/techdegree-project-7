@@ -81,7 +81,7 @@ h3 {
 
 .section-heading {
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1rem;
   margin-bottom: 20px;
 }
@@ -136,12 +136,24 @@ input:checked[type="checkbox"]::before {
   display: inline;
 }
 
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
 label {
   position: absolute;
   color: $white;
   font-weight: 700;
   font-size: 0.8rem;
   pointer-events: none;
+}
+
+#timezone {
+  width: 80%;
+  padding: 12px;
+  border-radius: 5px;
 }
 
 .on,
@@ -192,7 +204,7 @@ label {
 }
 
 .btn-disabled {
-  width: 100%;
+  width: 80%;
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -239,6 +251,12 @@ canvas {
   margin-bottom: 50px;
 }
 
+.mobile-users h3,
+.daily h3,
+.social-stats h3 {
+  margin: 0 auto 50px auto;
+}
+
 .traffic-header,
 .daily,
 .mobile-users,
@@ -247,7 +265,6 @@ canvas {
 .message {
   display: flex;
   flex-direction: column;
-  align-items: center;
   grid-column: 1 / span 2;
 
   h3 {
@@ -266,8 +283,9 @@ canvas {
 
 .members,
 .member-activity-container {
-  text-align: center;
   margin-bottom: 20px;
+  display: flex;
+  align-items: space-between;
   p {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -279,6 +297,7 @@ canvas {
   img {
     width: 50px;
     border-radius: 50%;
+    margin-right: 30px;
   }
 }
 
@@ -475,7 +494,31 @@ MEDIA QUERIES
     justify-content: space-between;
   }
 
+  .message,
   .daily {
     border-right: 1px solid $light-gray;
+  }
+
+  .message,
+  .settings {
+    border-bottom: none;
+    margin-bottom: 20px;
+  }
+
+  .settings {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .settings-button {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .mobile-users h3,
+  .daily h3,
+  .social-stats h3 {
+    margin-left: 50px;
   }
 }
