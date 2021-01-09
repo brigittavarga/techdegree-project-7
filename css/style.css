@@ -501,7 +501,8 @@ main .settings {
   }
 
   .message,
-.daily {
+.daily,
+.new-members {
     border-right: 1px solid #b2b2b2;
   }
 
