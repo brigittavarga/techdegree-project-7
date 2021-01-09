@@ -140,6 +140,7 @@ input:checked[type="checkbox"]::before {
   display: flex;
   justify-content: space-between;
   width: 50%;
+  align-items: center;
 }
 
 label {
@@ -521,5 +522,11 @@ MEDIA QUERIES
   .daily h3,
   .social-stats h3 {
     margin-left: 50px;
+  }
+
+  #timezone {
+    width: 100%;
+    border: 1px solid $light-gray;
+    color: $light-gray;
   }
 }
