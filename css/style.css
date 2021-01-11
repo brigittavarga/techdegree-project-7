@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* COLORS */
 * {
   margin: 0;
@@ -519,6 +520,10 @@ main .settings {
 .settings {
     border-bottom: none;
     margin-bottom: 20px;
+  }
+
+  .recent-activity  {
+    padding-left: 20px;
   }
 
   .settings {
