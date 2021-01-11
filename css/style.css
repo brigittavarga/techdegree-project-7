@@ -170,6 +170,10 @@ label {
   width: 95%;
 }
 
+.widget-container .btn-primary {
+  width: 100%;
+}
+
 .widget-container input,
 .widget-container textarea {
   width: 100%;
@@ -182,7 +186,7 @@ label {
 }
 
 .btn-primary {
-  width: 100%;
+  flex-basis: 50%;
   padding: 15px;
   text-transform: uppercase;
   color: #fff;
@@ -190,7 +194,7 @@ label {
   border: none;
   border-radius: 5px;
   font-size: 0.75rem;
-  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .btn-primary:hover {
@@ -198,7 +202,7 @@ label {
 }
 
 .btn-disabled {
-  width: 80%;
+  flex-basis: 50%;
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -470,6 +474,10 @@ main .settings {
 .settings {
     max-width: calc(50vw - 47.5px);
   }
+
+  .toggle-container {
+    width: 75%;
+  }
 }
 @media screen and (min-width: 1024px) {
   header {
@@ -522,6 +530,7 @@ main .settings {
   .settings .settings-button {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
   }
 
   .mobile-users h3,
