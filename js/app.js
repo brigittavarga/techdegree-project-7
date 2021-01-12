@@ -104,6 +104,8 @@ let mobileChart = new Chart(mobileCanvas, {
   options: mobileOptions
   });
 
+alert();
+
 alert.innerHTML = 
 `
 <div class="alert-banner">
@@ -147,3 +149,4 @@ profileToggle.addEventListener("click", () => {
         toggleOff[1].style.display = "";
     }
 });
+

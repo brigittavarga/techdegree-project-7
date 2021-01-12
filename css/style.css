@@ -152,7 +152,7 @@ input:checked[type=checkbox]::before {
 .toggle-container {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 100%;
   align-items: center;
 }
 
@@ -271,6 +271,10 @@ section {
   border-bottom: 1px solid #b2b2b2;
 }
 
+.traffic {
+  padding-top: 0;
+}
+
 canvas {
   margin-bottom: 50px;
 }
@@ -346,6 +350,7 @@ canvas {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .social-container {
@@ -471,11 +476,15 @@ main .settings {
   }
 
   .widget-container {
-    width: 90vh;
+    width: 90%;
   }
 
   .widget-container-half {
     width: 80%;
+  }
+
+  .toggle-container {
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 930px) {
@@ -493,10 +502,6 @@ main .settings {
 .message,
 .settings {
     max-width: calc(50vw - 47.5px);
-  }
-
-  .toggle-container {
-    width: 75%;
   }
 }
 @media screen and (min-width: 1024px) {
