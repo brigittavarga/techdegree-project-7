@@ -104,9 +104,7 @@ let mobileChart = new Chart(mobileCanvas, {
   options: mobileOptions
   });
 
-alert();
-
-alert.innerHTML = 
+alertBanner.innerHTML = 
 `
 <div class="alert-banner">
 <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks

@@ -52,6 +52,16 @@ header h3 {
   font-size: 1rem;
 }
 
+.alert-banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7377bf;
+  padding: 15px;
+  color: white;
+  margin: 0 15px 15px 15px;
+  border-radius: 5px;
+}
+
 .bell-icon {
   position: relative;
 }
@@ -580,6 +590,7 @@ main .settings {
     height: 100px;
     position: relative;
     padding-left: 0;
+    margin-top: 0;
   }
   .dashboard-header h2 {
     background-color: #fff;
