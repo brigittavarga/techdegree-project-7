@@ -61,6 +61,10 @@ header h3 {
   margin: 0 15px 15px 15px;
   border-radius: 5px;
 }
+.alert-banner a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .bell-icon {
   position: relative;
