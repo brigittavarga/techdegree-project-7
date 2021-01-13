@@ -123,13 +123,12 @@ h3 {
 }
 
 #traffic-chart {
-  width: 100vw;
+  width: 90vw;
 }
 
 section,
 .dashboard-header {
   padding-left: 0;
-  margin: 0 auto;
 }
 
 .section-heading {
@@ -622,6 +621,8 @@ MEDIA QUERIES
       margin-bottom: 0;
     }
   }
+
+
 
   #timezone {
     width: 100%;
