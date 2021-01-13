@@ -122,9 +122,14 @@ h3 {
   }
 }
 
+#traffic-chart {
+  width: 100vw;
+}
+
 section,
 .dashboard-header {
   padding-left: 0;
+  margin: 0 auto;
 }
 
 .section-heading {
