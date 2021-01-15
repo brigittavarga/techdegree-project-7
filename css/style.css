@@ -430,7 +430,7 @@ label {
 }
 
 #timezone {
-  width: 80%;
+  width: 100%;
   padding: 12px;
   border-radius: 5px;
 }
@@ -539,8 +539,36 @@ section {
   padding-top: 0;
 }
 
+.settings {
+  grid-column: 1/span 2;
+  padding: 15px 15px 0 15px;
+}
+.settings .settings-button {
+  display: flex;
+  margin-top: 15px;
+}
+
 canvas {
   margin-bottom: 50px;
+}
+
+.message,
+.recent-activity,
+.new-members {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.new-members {
+  padding-right: 20px;
+}
+
+.new-members .date {
+  margin-left: auto;
+}
+
+.recent-activity {
+  padding-right: 20px;
 }
 
 .traffic-header,
