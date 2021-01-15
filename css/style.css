@@ -435,6 +435,10 @@ label {
   border-radius: 5px;
 }
 
+.social-stats {
+  padding: 35px 15px 0 15px;
+}
+
 .mobile-users h3,
 .daily h3,
 .social-stats h3 {
