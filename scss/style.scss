@@ -152,6 +152,13 @@ header {
     color:#333;
 }
 
+.active {
+  background-color: $green;
+  border-radius: 50px;
+  color: $white;
+  padding: 0 10px 0 10px;
+}
+
 .alert-banner {
   display: flex;
   justify-content: space-between;

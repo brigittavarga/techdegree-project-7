@@ -12,6 +12,8 @@ const user = document.getElementById("user-field");
 const message = document.getElementById("message-field");
 const send = document.getElementById("send");
 
+const trafficNavLink = document.getElementsByClassName("traffic-nav");
+
 const dailyData = {
   labels: ["S", "M", "T", "W", "T", "F", "S"],
   datasets: [{
@@ -148,3 +150,26 @@ profileToggle.addEventListener("click", () => {
     }
 });
 
+trafficNavLink.addEventListener("click", function(e) {
+  if( e.target.textContent === "hourly") {
+    // render hourly chart
+    trafficChart.data.datasets[0].data = [5400, 8000, 3000, 8000, 15000, 17500, 12500, 18500, 22500, 15000,
+      25000];
+    trafficNavLink.classList.add("active");
+  } else if ( e.target.textContent === "daily" ){
+    // render daily chart
+    trafficChart.data.datasets[0].data = [9000, 12250, 5000, 9000, 19000, 21500, 29500, 32500, 39500, 41000,
+      25000];
+      trafficNavLink.classList.add("active");
+  } else if ( e.target.textContent === "weekly" ) {
+  // render weekly chart    
+  trafficChart.data.datasets[0].data = [12000, 22250, 9000, 9500, 10000, 12000, 23000, 30000, 34000, 40000,
+    85000];
+    trafficNavLink.classList.add("active");
+  } else if ( e.target.textContent === "monthly" ) {
+  // render monthly chart
+  trafficChart.data.datasets[0].data = [9000, 12250, 5000, 9000, 19000, 21500, 29500, 32500, 39500, 41000,
+    25000];
+    trafficNavLink.classList.add("active");
+  }
+});
