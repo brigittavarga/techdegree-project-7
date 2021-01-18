@@ -12,7 +12,7 @@ const user = document.getElementById("user-field");
 const message = document.getElementById("message-field");
 const send = document.getElementById("send");
 
-const trafficNavLink = document.getElementsByClassName("traffic-nav");
+const trafficNavLink = document.getElementById("traffic-nav-links");
 
 const dailyData = {
   labels: ["S", "M", "T", "W", "T", "F", "S"],
@@ -151,25 +151,27 @@ profileToggle.addEventListener("click", () => {
 });
 
 trafficNavLink.addEventListener("click", function(e) {
+  document.querySelector('.active').classList.remove('active');
   if( e.target.textContent === "hourly") {
     // render hourly chart
     trafficChart.data.datasets[0].data = [5400, 8000, 3000, 8000, 15000, 17500, 12500, 18500, 22500, 15000,
       25000];
-    trafficNavLink.classList.add("active");
+      e.target.classList.add("active");
   } else if ( e.target.textContent === "daily" ){
     // render daily chart
-    trafficChart.data.datasets[1].data = [9000, 12250, 5000, 9000, 19000, 21500, 29500, 32500, 39500, 41000,
+    trafficChart.data.datasets[0].data = [6750, 9600, 3400, 9100, 19000, 21500, 23500, 28500, 39500, 41000,
       25000];
-      trafficNavLink.classList.add("active");
+      e.target.classList.add("active");
   } else if ( e.target.textContent === "weekly" ) {
   // render weekly chart    
-  trafficChart.data.datasets[2].data = [12000, 22250, 9000, 9500, 10000, 12000, 23000, 30000, 34000, 40000,
+  trafficChart.data.datasets[0].data = [12000, 12250, 6000, 9500, 10000, 12000, 29000, 30000, 39600, 47000,
     85000];
-    trafficNavLink.classList.add("active");
+    e.target.classList.add("active");
   } else if ( e.target.textContent === "monthly" ) {
   // render monthly chart
-  trafficChart.data.datasets[3].data = [9000, 12250, 5000, 9000, 19000, 21500, 29500, 32500, 39500, 41000,
+  trafficChart.data.datasets[0].data = [16000, 22250, 8000, 9900, 19000, 17500, 32500, 32500, 49500, 51000,
     25000];
-    trafficNavLink.classList.add("active");
+    e.target.classList.add("active");
   }
+  trafficChart.update();
 });
