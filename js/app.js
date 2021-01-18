@@ -152,26 +152,23 @@ profileToggle.addEventListener("click", () => {
 
 trafficNavLink.addEventListener("click", function(e) {
   document.querySelector('.active').classList.remove('active');
-  if( e.target.textContent === "hourly") {
+  e.target.classList.add("active");
+  if( e.target.textContent === "Hourly") {
     // render hourly chart
     trafficChart.data.datasets[0].data = [5400, 8000, 3000, 8000, 15000, 17500, 12500, 18500, 22500, 15000,
       25000];
-      e.target.classList.add("active");
-  } else if ( e.target.textContent === "daily" ){
+  } else if ( e.target.textContent === "Daily" ){
     // render daily chart
     trafficChart.data.datasets[0].data = [6750, 9600, 3400, 9100, 19000, 21500, 23500, 28500, 39500, 41000,
       25000];
-      e.target.classList.add("active");
-  } else if ( e.target.textContent === "weekly" ) {
+  } else if ( e.target.textContent === "Weekly" ) {
   // render weekly chart    
   trafficChart.data.datasets[0].data = [12000, 12250, 6000, 9500, 10000, 12000, 29000, 30000, 39600, 47000,
     85000];
-    e.target.classList.add("active");
-  } else if ( e.target.textContent === "monthly" ) {
+  } else if ( e.target.textContent === "Monthly" ) {
   // render monthly chart
   trafficChart.data.datasets[0].data = [16000, 22250, 8000, 9900, 19000, 17500, 32500, 32500, 49500, 51000,
     25000];
-    e.target.classList.add("active");
   }
   trafficChart.update();
 });

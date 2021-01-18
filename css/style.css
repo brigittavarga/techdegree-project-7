@@ -609,7 +609,7 @@ canvas {
   display: flex;
   justify-content: center;
   list-style: none;
-  margin: 10px 0 20px 0;
+  margin: 10px 10px 20px 0;
 }
 .traffic-header .traffic-nav li,
 .daily .traffic-nav li,
@@ -617,7 +617,7 @@ canvas {
 .new-members .traffic-nav li,
 .recent-activity .traffic-nav li,
 .message .traffic-nav li {
-  padding-right: 12px;
+  padding: 0 20px 0 20px;
 }
 
 .traffic-nav-link:hover {
