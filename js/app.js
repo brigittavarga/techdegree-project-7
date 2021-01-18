@@ -158,17 +158,17 @@ trafficNavLink.addEventListener("click", function(e) {
     trafficNavLink.classList.add("active");
   } else if ( e.target.textContent === "daily" ){
     // render daily chart
-    trafficChart.data.datasets[0].data = [9000, 12250, 5000, 9000, 19000, 21500, 29500, 32500, 39500, 41000,
+    trafficChart.data.datasets[1].data = [9000, 12250, 5000, 9000, 19000, 21500, 29500, 32500, 39500, 41000,
       25000];
       trafficNavLink.classList.add("active");
   } else if ( e.target.textContent === "weekly" ) {
   // render weekly chart    
-  trafficChart.data.datasets[0].data = [12000, 22250, 9000, 9500, 10000, 12000, 23000, 30000, 34000, 40000,
+  trafficChart.data.datasets[2].data = [12000, 22250, 9000, 9500, 10000, 12000, 23000, 30000, 34000, 40000,
     85000];
     trafficNavLink.classList.add("active");
   } else if ( e.target.textContent === "monthly" ) {
   // render monthly chart
-  trafficChart.data.datasets[0].data = [9000, 12250, 5000, 9000, 19000, 21500, 29500, 32500, 39500, 41000,
+  trafficChart.data.datasets[3].data = [9000, 12250, 5000, 9000, 19000, 21500, 29500, 32500, 39500, 41000,
     25000];
     trafficNavLink.classList.add("active");
   }
