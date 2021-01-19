@@ -620,72 +620,6 @@ header {
 MEDIA QUERIES
 ------------- */
 
-// Small phones 
-@media screen and (max-width: 358px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10px;
-  }
-
-  nav {
-    display: flex;
-  }
-
-  #traffic-nav-links {
-    justify-content: flex-start;
-  }
-
-  .section-heading {
-    margin: 0 auto;
-  }
-
-  .members,
-  .recent-activity {
-    flex-direction: column;
-    font-size: 14px;
-    margin: 0;
-  }
-
-  .members {
-    text-align: center;
-  }
-
-  .members .date {
-    margin: 0;
-  }
-
-  .members img {
-    margin: 10px 0 0 0;
-  }
-
-  .recent-activity h3 {
-    margin-bottom: 20px;
-  }
-
-  .member-activity-container img {
-    margin-right: 5px;
-  }
-
-  .member-activity p {
-    margin-right: 0;
-  }
-
-  .settings-button {
-    flex-direction: column;
-  }
-
-  .btn-primary,
-  .btn-disabled {
-    margin-bottom: 10px;
-  }
-
-  .social-container {
-    padding: 5px 0 5px 5px;
-    margin: 0 0 10px 0;
-  }
-}
-
 // Tablet
 @media screen and (min-width: 768px) {
   .grid-container {
@@ -752,27 +686,8 @@ MEDIA QUERIES
   }
 }
 
-// Large tablet / small desktop
-@media screen and (min-width: 768px) and (max-width: 930px) {
-  .dashboard-header,
-  .alert,
-  .traffic,
-  .social {
-    max-width: calc(100vw - 95px);
-  }
-
-  .daily,
-  .mobile-users,
-  .new-members,
-  .recent-activity,
-  .message,
-  .settings {
-    max-width: calc(50vw - 47.5px);
-  }
-}
-
 // Desktop
-@media screen and (min-width: 1022px) {
+@media screen and (min-width: 1024px) {
   header {
     z-index: 20;
     padding-left:20px;
