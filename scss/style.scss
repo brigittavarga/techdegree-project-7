@@ -726,7 +726,7 @@ MEDIA QUERIES
   }
 
   .social-flex-container {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 
@@ -840,6 +840,10 @@ MEDIA QUERIES
       justify-content: space-between;
       margin-top: 20px;
     }
+  }
+
+  .social-flex-container {
+    flex-direction: row;
   }
 
   .social-stats,

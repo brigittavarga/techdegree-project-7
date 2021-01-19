@@ -866,7 +866,7 @@ main .settings {
   }
 
   .social-flex-container {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 
@@ -979,6 +979,10 @@ main .settings {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+  }
+
+  .social-flex-container {
+    flex-direction: row;
   }
 
   .social-stats,
