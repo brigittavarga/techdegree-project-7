@@ -908,7 +908,7 @@ main .settings {
     max-width: calc(50vw - 47.5px);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1022px) {
   header {
     z-index: 20;
     padding-left: 20px;
